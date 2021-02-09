@@ -1,0 +1,68 @@
+
+/* color fondo pagina */
+body{
+    background-color: rgba(131, 203, 245, 0.603);
+}
+/* nombre */
+p.steve{
+      color: blue;
+      text-align: center;
+      font-size: 200%;
+}
+/* letra del nombre */
+p.steve::first-letter{
+    color: black;
+    font-size: 300%;
+
+}
+/* color lista */
+p.vida{
+    color: blue;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* color primera lina */
+
+div p::first-line{
+    color: red;
+}
+/* posicion raton encima */
+span.vida:hover{
+    background-color: yellow;
+    color: red;
+}
+/* color cuando visitas el link */
+a:link{
+    background-color: white;
+    color:blue;
+}
+a:visited{
+    background-color: blue;
+    color:white;
+}
+/* Imagen de Steve Jobs */
+img.steve{
+    float: right;
+    width: 350px;
+    height: 350px;
+}
+
+
+
+/* Contador */
+
+h4{
+    counter-reset: cuenta-productos;
+}
+p.productos::before{
+    content: counter(cuenta-productos) ".";
+    counter-increment: cuenta-productos;
+}
+
+/* footer */
+
+p.foot{
+    font-style: italic;
+}
+
